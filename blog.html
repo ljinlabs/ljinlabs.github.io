@@ -1,0 +1,14 @@
+---
+layout: default
+title: Blog
+---
+<div class="post-list-container">
+    <ul class="post-list">
+        {% for post in site.posts %}
+            <li class="post-list-item">
+                <h2 class="post-title"><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h2>
+                <p class="excerpt">{{ post.excerpt }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

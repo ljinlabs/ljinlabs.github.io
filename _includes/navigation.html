@@ -1,0 +1,12 @@
+<nav class="nav">
+    <div class="top-nav">
+        <div class="nav-logo-container">
+            <h1 class="logo">LJIN Labs</h1>
+        </div>
+        <ul class="nav-list">
+            {% for item in site.data.navigation %}
+                <li class="nav-item"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
